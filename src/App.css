@@ -44,3 +44,43 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+
+/* Accessibility Test Section Styles */
+.a11y-test-section {
+  margin: 2em 0;
+  padding: 1.5em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.a11y-test-section h1,
+.a11y-test-section h2,
+.a11y-test-section h3 {
+  margin-top: 0;
+}
+
+.empty-link {
+  color: #999;
+  text-decoration: none;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: #4CAF50;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.low-contrast-link {
+  color: #f0f0f0;
+  background-color: #ffffff;
+  text-decoration: underline;
+}
