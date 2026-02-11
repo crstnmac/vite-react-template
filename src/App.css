@@ -36,3 +36,11 @@
 .card {
   padding: 2em;
 }
+
+.inaccessible-button {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

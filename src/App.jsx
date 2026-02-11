@@ -17,6 +17,7 @@ function App() {
       <div className="card">
         <p>Choo Choo! This is an example of a Vite + React app running on Railway.</p>
       </div>
+      <button className="inaccessible-button">Click Me</button>
     </>
   )
 }
