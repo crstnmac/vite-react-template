@@ -68,3 +68,60 @@
   color: transparent;
   text-decoration: none;
 }
+
+/* Additional Issue Styles */
+.icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 4px;
+}
+
+.fake-button {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.fake-button:hover {
+  background: #45a049;
+}
+
+.no-focus-button,
+.no-focus-link {
+  background: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.no-focus-button:focus,
+.no-focus-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.autobanner {
+  background: #ffeb3b;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.no-headers-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.no-headers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

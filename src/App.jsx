@@ -66,6 +66,76 @@ function App() {
         <h2>Empty Link</h2>
         <a href="#" className="empty-link"></a>
       </div>
+
+      {/* Issue 8: Button with no visible text and no aria-label */}
+      <div className="a11y-test-section">
+        <h2>Icon Button Without Labels</h2>
+        <button className="icon-btn">💾</button>
+        <button className="icon-btn">🗑️</button>
+        <button className="icon-btn">✏️</button>
+      </div>
+
+      {/* Issue 9: Select without label */}
+      <div className="a11y-test-section">
+        <h2>Select Without Label</h2>
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+
+      {/* Issue 10: Non-semantic buttons */}
+      <div className="a11y-test-section">
+        <h2>Divs Used as Buttons</h2>
+        <div className="fake-button" role="button">Click Me</div>
+        <div className="fake-button" role="button" onClick={() => {}}>Fake Button 2</div>
+      </div>
+
+      {/* Issue 11: Missing required attributes */}
+      <div className="a11y-test-section">
+        <h2>Input Missing Required Attributes</h2>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" />
+      </div>
+
+      {/* Issue 12: Multiple H1s on page */}
+      <div className="a11y-test-section">
+        <h1>Another H1 Heading</h1>
+        <p>Multiple H1s confuse assistive technology users.</p>
+      </div>
+
+      {/* Issue 13: Poor focus indicators */}
+      <div className="a11y-test-section">
+        <h2>Poor Focus Styles</h2>
+        <button className="no-focus-button">No Focus Indicator</button>
+        <a href="#" className="no-focus-link">Link Without Focus</a>
+      </div>
+
+      {/* Issue 14: Autoplaying media without controls */}
+      <div className="a11y-test-section">
+        <h2>Autoplaying Content</h2>
+        <div className="autobanner">
+          <marquee>🚨 This is automatically moving content 🚨</marquee>
+        </div>
+      </div>
+
+      {/* Issue 15: Table without caption and headers */}
+      <div className="a11y-test-section">
+        <h2>Table Without Semantics</h2>
+        <table className="no-headers-table">
+          <tbody>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+            </tr>
+            <tr>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </>
   )
 }
