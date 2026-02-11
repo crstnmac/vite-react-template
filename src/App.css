@@ -36,3 +36,35 @@
 .card {
   padding: 2em;
 }
+
+/* Accessibility Test Sections */
+.a11y-test-section {
+  margin: 2em 0;
+  padding: 1.5em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.a11y-test-section h1,
+.a11y-test-section h2,
+.a11y-test-section h3 {
+  margin-top: 0;
+}
+
+/* Issue Styles */
+.icon-only-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.low-contrast-link {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+.empty-link {
+  color: transparent;
+  text-decoration: none;
+}
