@@ -17,56 +17,88 @@ function App() {
       <div className="card">
         <p>Choo Choo! This is an example of a Vite + React app running on Railway.</p>
       </div>
-      <button className="inaccessible-button">Click Me</button>
-      
-      {/* Accessibility Issues Below */}
-      
-      {/* Issue 1: Image without alt text */}
+
+      {/* New Accessibility Issues for Testing */}
+
+      {/* Issue 1: Button with no text content and no aria-label */}
       <div className="a11y-test-section">
-        <h2>Image Without Alt Text</h2>
-        <img src={reactLogo} />
+        <h2>Button Without Accessible Name</h2>
+        <button className="icon-only-button">⭐</button>
       </div>
-      
-      {/* Issue 2: Empty link */}
+
+      {/* Issue 3: Link with poor color contrast */}
       <div className="a11y-test-section">
-        <a href="#" className="empty-link">Click Here</a>
+        <h2>Low Contrast Link</h2>
+        <a href="#" className="low-contrast-link">This link is hard to read</a>
       </div>
-      
-      {/* Issue 3: Invalid heading hierarchy */}
+
+      {/* Issue 4: Invalid heading hierarchy */}
       <div className="a11y-test-section">
-        <h1>Invalid Heading Hierarchy</h1>
-        <h3>This should be h2 not h3</h3>
-        <p>Skipping h2 is an accessibility violation</p>
+        <h1>Heading Hierarchy Issue</h1>
+        <h3>Skipped H2 - this should be H2</h3>
+        <p>Invalid heading structure affects screen reader users.</p>
       </div>
-      
-      {/* Issue 4: Input without label */}
+
+      {/* Issue 5: Form input without label */}
       <div className="a11y-test-section">
-        <input type="text" placeholder="Enter your name" />
-        <button className="submit-button">Submit</button>
+        <h2>Input Without Label</h2>
+        <input type="text" placeholder="Your name" />
+        <button>Submit</button>
       </div>
-      
-      {/* Issue 5: Button without accessible name */}
+
+      {/* Issue 7: Empty link */}
       <div className="a11y-test-section">
-        <button className="icon-button">★</button>
+        <h2>Empty Link</h2>
+        <a href="#" className="empty-link"></a>
       </div>
-      
-      {/* Issue 6: Missing form attributes */}
+
+      {/* Issue 8: Button with no visible text and no aria-label */}
       <div className="a11y-test-section">
-        <form>
-          <input type="checkbox" />
-          <span>Subscribe to newsletter</span>
-        </form>
+        <h2>Icon Button Without Labels</h2>
+        <button className="icon-btn">💾</button>
+        <button className="icon-btn">🗑️</button>
+        <button className="icon-btn">✏️</button>
       </div>
-      
-      {/* Issue 7: Poor color contrast link */}
+
+      {/* Issue 9: Select without label */}
       <div className="a11y-test-section">
-        <a href="#" className="low-contrast-link">This link has poor contrast</a>
+        <h2>Select Without Label</h2>
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
       </div>
-      
-      {/* Issue 8: Missing lang attribute on HTML would be caught here */}
+
+      {/* Issue 10: Non-semantic buttons */}
       <div className="a11y-test-section">
-        <h1>Document Without Language</h1>
-        <p>This page might be missing proper language declaration</p>
+        <h2>Divs Used as Buttons</h2>
+        <div className="fake-button" role="button">Click Me</div>
+        <div className="fake-button" role="button" onClick={() => {}}>Fake Button 2</div>
+      </div>
+
+      {/* Issue 11: Missing required attributes */}
+      <div className="a11y-test-section">
+        <h2>Input Missing Required Attributes</h2>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" />
+      </div>
+
+      {/* Issue 15: Table without caption and headers */}
+      <div className="a11y-test-section">
+        <h2>Table Without Semantics</h2>
+        <table className="no-headers-table">
+          <tbody>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+            </tr>
+            <tr>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   )

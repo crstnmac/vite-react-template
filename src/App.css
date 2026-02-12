@@ -37,15 +37,7 @@
   padding: 2em;
 }
 
-.inaccessible-button {
-  background-color: #ffffff;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* Accessibility Test Section Styles */
+/* Accessibility Test Sections */
 .a11y-test-section {
   margin: 2em 0;
   padding: 1.5em;
@@ -59,20 +51,8 @@
   margin-top: 0;
 }
 
-.empty-link {
-  color: #999;
-  text-decoration: none;
-}
-
-.submit-button {
-  background-color: #4CAF50;
-  color: #4CAF50;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.icon-button {
+/* Issue Styles */
+.icon-only-button {
   background: transparent;
   border: none;
   font-size: 24px;
@@ -80,7 +60,68 @@
 }
 
 .low-contrast-link {
-  color: #f0f0f0;
-  background-color: #ffffff;
+  color: #e0e0e0;
   text-decoration: underline;
+}
+
+.empty-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+/* Additional Issue Styles */
+.icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 4px;
+}
+
+.fake-button {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.fake-button:hover {
+  background: #45a049;
+}
+
+.no-focus-button,
+.no-focus-link {
+  background: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.no-focus-button:focus,
+.no-focus-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.autobanner {
+  background: #ffeb3b;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.no-headers-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.no-headers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
