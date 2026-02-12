@@ -120,14 +120,6 @@ function App() {
         </div>
       </div>
 
-       {/* Issue 14: Autoplaying media without controls */}
-      <div className="a11y-test-section">
-        <h2>Autoplaying Content</h2>
-        <div className="autobanner">
-          <marquee>🚨 This is automatically moving content 🚨</marquee>
-        </div>
-      </div>
-
       {/* Issue 15: Table without caption and headers */}
       <div className="a11y-test-section">
         <h2>Table Without Semantics</h2>
