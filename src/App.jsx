@@ -52,15 +52,6 @@ function App() {
         <button>Submit</button>
       </div>
 
-      {/* Issue 6: Checkbox without proper labeling */}
-      <div className="a11y-test-section">
-        <h2>Unlabeled Checkbox</h2>
-        <form>
-          <input type="checkbox" />
-          <span>Subscribe</span>
-        </form>
-      </div>
-
       {/* Issue 7: Empty link */}
       <div className="a11y-test-section">
         <h2>Empty Link</h2>
