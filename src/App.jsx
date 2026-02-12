@@ -148,3 +148,4 @@ export default App
 <!-- Another webhook trigger test -->
 <!-- Test with Playwright installed -->
 <<!-- Ready for Playwright scan -->
+<!-- Ready for Dokploy rebuild -->
