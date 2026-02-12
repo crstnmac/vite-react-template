@@ -149,3 +149,4 @@ export default App
 <!-- Test with Playwright installed -->
 <<!-- Ready for Playwright scan -->
 <!-- Ready for Dokploy rebuild -->
+<!-- Test after Playwright global install fix -->
