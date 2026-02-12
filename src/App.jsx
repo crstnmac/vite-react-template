@@ -96,13 +96,6 @@ function App() {
         <p>Multiple H1s confuse assistive technology users.</p>
       </div>
 
-      {/* Issue 13: Poor focus indicators */}
-      <div className="a11y-test-section">
-        <h2>Poor Focus Styles</h2>
-        <button className="no-focus-button">No Focus Indicator</button>
-        <a href="#" className="no-focus-link">Link Without Focus</a>
-      </div>
-
       {/* Issue 15: Table without caption and headers */}
       <div className="a11y-test-section">
         <h2>Table Without Semantics</h2>
