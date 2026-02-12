@@ -147,3 +147,4 @@ export default App
 <!-- Final test with debug logging -->
 <!-- Another webhook trigger test -->
 <!-- Test with Playwright installed -->
+<<!-- Ready for Playwright scan -->
