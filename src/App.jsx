@@ -105,13 +105,3 @@ function App() {
 }
 
 export default App
-<!-- Test comment to trigger webhook -->
-<!-- Another test comment to retrigger webhook -->
-<!-- Debug webhook with better logging -->
-<!-- Final test with debug logging -->
-<!-- Another webhook trigger test -->
-<!-- Test with Playwright installed -->
-<<!-- Ready for Playwright scan -->
-<!-- Ready for Dokploy rebuild -->
-<!-- Test after Playwright global install fix -->
-<!-- Test with BrowserBase support -->
