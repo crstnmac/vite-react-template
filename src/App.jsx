@@ -85,15 +85,6 @@ function App() {
         </select>
       </div>
 
-       <div className="a11y-test-section">
-        <h2>Select Without Label</h2>
-        <select>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>
-
       {/* Issue 10: Non-semantic buttons */}
       <div className="a11y-test-section">
         <h2>Divs Used as Buttons</h2>
