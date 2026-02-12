@@ -26,12 +26,6 @@ function App() {
         <button className="icon-only-button">⭐</button>
       </div>
 
-      {/* Issue 2: Image without alt text */}
-      <div className="a11y-test-section">
-        <h2>Image Missing Alt Text</h2>
-        <img src={reactLogo} />
-      </div>
-
       {/* Issue 3: Link with poor color contrast */}
       <div className="a11y-test-section">
         <h2>Low Contrast Link</h2>
