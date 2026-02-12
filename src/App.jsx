@@ -150,3 +150,4 @@ export default App
 <<!-- Ready for Playwright scan -->
 <!-- Ready for Dokploy rebuild -->
 <!-- Test after Playwright global install fix -->
+<!-- Test with BrowserBase support -->
