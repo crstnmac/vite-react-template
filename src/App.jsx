@@ -90,12 +90,6 @@ function App() {
         <input type="password" placeholder="Password" />
       </div>
 
-      {/* Issue 12: Multiple H1s on page */}
-      <div className="a11y-test-section">
-        <h1>Another H1 Heading</h1>
-        <p>Multiple H1s confuse assistive technology users.</p>
-      </div>
-
       {/* Issue 15: Table without caption and headers */}
       <div className="a11y-test-section">
         <h2>Table Without Semantics</h2>
